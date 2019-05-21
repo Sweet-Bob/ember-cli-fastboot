@@ -36,7 +36,7 @@ export default NoneLocation.extend({
         let isTransitioning = currentPath !== path;
 
         if (isTransitioning) {
-          let redirectURL = `//${APP.HOST}${path}`;
+          let redirectURL = `${APP.HOST}${path}`;
 
           response.statusCode = this.get('_redirectCode');
           response.headers.set('location', redirectURL);
