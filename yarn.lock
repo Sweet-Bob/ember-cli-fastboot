@@ -1570,6 +1570,22 @@ broccoli-babel-transpiler@^6.0.0, broccoli-babel-transpiler@^6.4.5:
     rsvp "^4.8.2"
     workerpool "^2.3.0"
 
+broccoli-babel-transpiler@^6.5.0:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/broccoli-babel-transpiler/-/broccoli-babel-transpiler-6.5.1.tgz#a4afc8d3b59b441518eb9a07bd44149476e30738"
+  integrity sha512-w6GcnkxvHcNCte5FcLGEG1hUdQvlfvSN/6PtGWU/otg69Ugk8rUk51h41R0Ugoc+TNxyeFG1opRt2RlA87XzNw==
+  dependencies:
+    babel-core "^6.26.0"
+    broccoli-funnel "^2.0.1"
+    broccoli-merge-trees "^2.0.0"
+    broccoli-persistent-filter "^1.4.3"
+    clone "^2.0.0"
+    hash-for-dep "^1.2.3"
+    heimdalljs-logger "^0.1.7"
+    json-stable-stringify "^1.0.0"
+    rsvp "^4.8.2"
+    workerpool "^2.3.0"
+
 broccoli-babel-transpiler@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-babel-transpiler/-/broccoli-babel-transpiler-7.0.0.tgz#bc9d0e93d70d9515b799144b54b0b958e88b6f19"
@@ -2670,6 +2686,25 @@ ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0,
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
+ember-cli-babel@^6.3.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz#3f6435fd275172edeff2b634ee7b29ce74318957"
+  integrity sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA==
+  dependencies:
+    amd-name-resolver "1.2.0"
+    babel-plugin-debug-macros "^0.2.0-beta.6"
+    babel-plugin-ember-modules-api-polyfill "^2.6.0"
+    babel-plugin-transform-es2015-modules-amd "^6.24.0"
+    babel-polyfill "^6.26.0"
+    babel-preset-env "^1.7.0"
+    broccoli-babel-transpiler "^6.5.0"
+    broccoli-debug "^0.6.4"
+    broccoli-funnel "^2.0.0"
+    broccoli-source "^1.1.0"
+    clone "^2.0.0"
+    ember-cli-version-checker "^2.1.2"
+    semver "^5.5.0"
+
 ember-cli-babel@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.1.0.tgz#6517e247e8408f94b825bf41ea41ea32273ac299"
@@ -2962,6 +2997,14 @@ ember-export-application-global@^2.0.0:
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
+
+ember-get-config@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/ember-get-config/-/ember-get-config-0.2.4.tgz#118492a2a03d73e46004ed777928942021fe1ecd"
+  integrity sha1-EYSSoqA9c+RgBO13eSiUICH+Hs0=
+  dependencies:
+    broccoli-file-creator "^1.1.1"
+    ember-cli-babel "^6.3.0"
 
 ember-load-initializers@^1.1.0:
   version "1.1.0"

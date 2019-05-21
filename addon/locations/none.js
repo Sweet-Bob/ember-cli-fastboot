@@ -1,8 +1,10 @@
 import { computed, get } from '@ember/object';
 import { bool, readOnly } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
-import { getOwner } from '@ember/application'
-import NoneLocation from '@ember/routing/none-location'
+import { getOwner } from '@ember/application';
+import NoneLocation from '@ember/routing/none-location';
+import config from 'ember-get-config';
+const { APP } = config;
 
 const TEMPORARY_REDIRECT_CODE = 307;
 
@@ -34,8 +36,7 @@ export default NoneLocation.extend({
         let isTransitioning = currentPath !== path;
 
         if (isTransitioning) {
-          let host = get(this, '_request.host');
-          let redirectURL = `//${host}${path}`;
+          let redirectURL = `//${APP.HOST}${path}`;
 
           response.statusCode = this.get('_redirectCode');
           response.headers.set('location', redirectURL);
